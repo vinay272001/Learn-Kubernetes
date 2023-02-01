@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learnkubernetes-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learnkubernetes
+  template:
+    metadata:
+      labels:
+        app: learnkubernetes
+    spec:
+      containers:
+        - name: learnkubernetes
+          image: vinagarw/learnkubernetes
+          ports:
+            - containerPort: 8080
