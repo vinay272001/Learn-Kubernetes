@@ -1,4 +1,4 @@
-# K8_assignment
+# Learning-Kubernetes
 
 - minikube start
 - kubectl create namespace argoctl
